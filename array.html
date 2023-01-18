@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Array</p>
+    <p id="demo">ABC</p>
+    <hr>
+    <p>Array Join</p>
+    <p id="array-join">ABC</p>
+    <hr>
+    <p>Array Push(Returns length of the array)</p>
+    <p id="array-push">ABC</p>
+    <hr>
+    <p>Array Pop(Returns popped element)</p>
+    <p id="array-pop">ABC</p>
+    <hr>
+    <p>Array Shift(Returns shiffted element)</p>
+    <p id="array-shift">ABC</p>
+    <hr>
+    <p>Array unshift(Returns length of the array)</p>
+    <p id="array-unshift">ABC</p>
+    <hr>
+    <p>Array sort number (Ascending)</p>
+    <p id="array-num">ABC</p>
+    <hr>
+    <p>Array sort number(Descending)</p>
+    <p id="array-num2">ABC</p>
+    <hr>
+
+
+    <script>
+        const fruits = ['Apple', 'Banana', 'Cherry'];
+        const num_array = [1, 5, 99, 33, 200, 66]
+        document.getElementById('demo').innerHTML = fruits;
+        document.getElementById('array-join').innerHTML = fruits.join(' * ');
+        document.getElementById('array-push').innerHTML = fruits.push('Dragon Fruit');
+        document.getElementById('array-pop').innerHTML = fruits.pop();
+        document.getElementById('array-shift').innerHTML = fruits.shift();
+        document.getElementById('array-unshift').innerHTML = fruits.unshift('Apricot');
+        document.getElementById('array-num').innerHTML = num_array.sort((a, b) => {return a - b;});
+        document.getElementById('array-num2').innerHTML = num_array.sort((a, b) => {return b - a;});
+        console.log(num_array.indexOf(NaN))
+        console.log(num_array.indexOf('Watermelon'))
+    </script>
+</body>
+</html>
