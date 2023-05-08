@@ -9,9 +9,10 @@
 <body>
   <p id="demo"></p>
   <p id="lang"></p>
+  <p id="cnt"></p>
 
   <script type="text/javascript">
-
+// getter and setter
     const person = {
       firstName: "Rukaiya",
       lastName: "Amin",
@@ -22,11 +23,38 @@
       set lang(lang){
         return this.language = lang.toUpperCase();
       }
-    }
+    };
 
     person.lang = "en"
-    document.getElementById("demo").innerHTML = person.fullName
-    document.getElementById("lang").innerHTML = person.language
+    document.getElementById("demo").innerHTML = person.fullName;
+    document.getElementById("lang").innerHTML = person.language;
+    // define property
+    const obj = {counter: 0};
+    Object.defineProperty(obj, "reset", {
+      get : function() {this.counter = 0;}
+    });
+    Object.defineProperty(obj, "increment", {
+      get : function(){this.counter++;}
+    });
+    Object.defineProperty(obj, "decrement", {
+      get :function () { this.counter--; }
+    });
+    Object.defineProperty(obj, "subtract", {
+      set : function (value) { this.counter -= value;}
+    });
+    Object.defineProperty(obj, "add", {
+      set: function (value) { this.counter += value;}
+    })
+
+    obj.reset;
+    obj.add = 17;
+    obj.subtract = 2;
+    obj.increment;
+    obj.increment;
+    obj.increment;
+    obj.decrement;
+
+    document.getElementById("cnt").innerHTML = obj.counter;
   </script>
 </body>
 </html>
