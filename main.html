@@ -10,7 +10,15 @@
 </head>
 
 <body>
-    <script src="./functions/arrow_function.js"></script>
+    <form action="" id="frm1">
+        <input type="text" id="firstName">
+        <input type="text" id="lastName">
+    </form>
+    <p id="demo">Hello</p>
+    <script>
+        console.log(document.getElementById('demo').attributes)
+        console.dir(document.forms['frm1'])
+    </script>
 </body>
 
 </html>
