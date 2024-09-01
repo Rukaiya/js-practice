@@ -1,0 +1,27 @@
+
+.sidebar-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 25%; */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px;
+  }
+}
