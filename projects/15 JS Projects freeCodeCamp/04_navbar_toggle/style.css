@@ -1,0 +1,22 @@
+:root {
+  --transition: all 0.3s linear;
+}
+/* by default hide links */
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* toddle class */
+.show-links {
+  height: 18rem;
+}
+
+@media screen and (min-width: 800px) {
+  /* Height auto is very IMPORTANT */
+  .links {
+    height: auto;
+    display: flex;
+  }
+}
