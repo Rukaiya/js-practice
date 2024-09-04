@@ -1,4 +1,9 @@
 
+.modal-overlay.open-modal{
+  visibility: visible;
+  z-index: 10;
+}
+
 .modal-overlay{
   visibility: hidden;
   position: fixed;
@@ -7,8 +12,5 @@
   width: 100%;
   z-index: -10;
 }
+ 
 
-.open-modal{
-  visibility: visible;
-  z-index: 10;
-}
