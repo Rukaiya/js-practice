@@ -31,9 +31,11 @@ header {
   display: grid;
   place-items: center;
 }
+
 h1 {
   color: aliceblue;
 }
+
 .video-container{
   position: absolute;
   object-fit: cover;

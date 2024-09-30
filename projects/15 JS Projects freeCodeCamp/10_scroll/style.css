@@ -1,0 +1,35 @@
+.logo{
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 1rem 1.5rem;
+}
+
+.nav-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-container{
+  height: 0;
+  overflow: hidden;
+}
+
+.links a {
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+}
+
+.links{
+  top: 0;
+}
